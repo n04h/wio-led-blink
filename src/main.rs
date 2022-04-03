@@ -15,7 +15,7 @@ use support::*;
 
 // ↓ no_mainアトリビュートを使わなくなるのでエントリポイントを指定するアトリビュート
 #[entry]
-fn main() -> ! {
+fn main() -> ! { // ! ... 発散する関数(diverging function)と呼ばれるもので関数からはなにも戻らないことを示す
     let (mut user_led, mut delay) = support::init();
 
     loop {
