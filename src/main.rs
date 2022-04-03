@@ -13,6 +13,7 @@ use panic_halt as _;
 
 use support::*;
 
+// ↓ no_mainアトリビュートを使わなくなるのでエントリポイントを指定するアトリビュート
 #[entry]
 fn main() -> ! {
     let (mut user_led, mut delay) = support::init();
